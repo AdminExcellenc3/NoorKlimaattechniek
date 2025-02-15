@@ -5,7 +5,6 @@ import PageTitle from '../../components/pagetitle/PageTitle'
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import ContactSection from '../../components/ContactSection';
 import Services from '../../api/service'
-import FunFactSection from '../../components/FunFact/FunFact';
 import PartnerSection from '../../components/PartnerSection';
 import CountrySection from '../../components/CountrySection/CountrySection';
 import NewsLatter from '../../components/NewsLatter/NewsLatter';
