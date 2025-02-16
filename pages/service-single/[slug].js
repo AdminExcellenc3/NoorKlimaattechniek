@@ -8,8 +8,8 @@ import ContactSection from '../../components/ContactSection';
 import Footer from '../../components/footer/Footer';
 import Services from '../../api/service'
 import ServiceSidebar from './sidebar';
-import eImg2 from '/public/images/icon/star.svg'
 import Image from 'next/image';
+import eImg2 from '@/public/images/icon/star.png';
 
 const ServiceSinglePage = (props) => {
     const router = useRouter()
