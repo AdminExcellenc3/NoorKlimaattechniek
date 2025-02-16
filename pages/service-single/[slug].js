@@ -9,7 +9,7 @@ import Footer from '../../components/footer/Footer';
 import Services from '../../api/service'
 import ServiceSidebar from './sidebar';
 import Image from 'next/image';
-import eImg2 from '@/public/images/icon/star.png';
+import eImg2 from '@/public/images/icon/star.svg';
 
 const ServiceSinglePage = (props) => {
     const router = useRouter()
