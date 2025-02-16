@@ -10,6 +10,7 @@ import CountrySection from '../../components/CountrySection/CountrySection';
 import NewsLatter from '../../components/NewsLatter/NewsLatter';
 import Footer from '../../components/footer/Footer';
 import Image from 'next/image';
+import FunFactSection from '../../components/FunFact/FunFact';
 
 const ServicePage = (props) => {
 
@@ -36,7 +37,10 @@ const ServicePage = (props) => {
                                                 <Image src={service.sIcon} alt="" />
                                             </div>
                                             <div className="xb-item--holder">
-                                                <h3 className="xb-item--title mb-20"><Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`}>{service.title}</Link>
+                                                <h3 className="xb-item--title mb-20">
+                                                    <Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`}>
+                                                        {service.title}
+                                                    </Link>
                                                 </h3>
                                                 <div className="xb-item--description">
                                                     {service.description}
@@ -47,7 +51,6 @@ const ServicePage = (props) => {
                                     : ''}
                             </div>
                         ))}
-
                     </div>
                 </div>
             </section>
@@ -61,4 +64,5 @@ const ServicePage = (props) => {
         </Fragment>
     )
 };
+
 export default ServicePage;
